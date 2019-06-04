@@ -8,6 +8,10 @@ html {
   height: 100vh;
 }
 
+body {
+  display: block;
+}
+
 .upper {
   text-transform: uppercase;
 }
@@ -115,7 +119,7 @@ hr {
   margin: 1.5rem;
 }
 
-.ceremony, .photos, .party {
+.ceremony, .photos, .party, .travel, .food, .other {
   display: inline-block;
   width: 33%;
 }
@@ -138,7 +142,7 @@ hr {
 
 .quote {
   font-family: 'Muli', sans-serif;
-  font-style: italic;
+  font-style: oblique;
   font-size: 1.125rem;
   line-height: 1.5;
   padding-bottom: 1.5rem;
@@ -148,6 +152,128 @@ hr {
   font-family: 'Muli', sans-serif;
   font-size: 1.125rem;
   line-height: 1.5;
+}
+
+.gifts {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #444349;
+  line-height: 1.5;
+  margin: 2rem auto;
+}
+
+.gifts img {
+  height: 7.5rem;
+  margin: 2rem;
+}
+
+.gifts p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+}
+
+.questions-n-answers {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.travel, .food, .other {
+  vertical-align: top;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.questions-n-answers h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  line-height: 1.5;
+}
+
+.questions-n-answers p{
+  font-family: 'Muli', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.question {
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 2;
+}
+
+.questions-n-answers a{
+  color: #bd806e;
+  text-decoration: none;
+}
+
+.questions-n-answers a:hover{
+  color: #eda087;
+}
+
+.contact {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #444349;
+}
+
+.contact p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 3;
+}
+
+.contact a {
+  color: #bd806e;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #eda087;
+}
+
+footer {
+  display: table;
+  position: relative;
+  height: 10vh;
+  width: 100%;
+  background: #606060;
+  color: hsla(0,0%,100%,.9);
+  text-align: center;
+}
+
+.footer-wrapper {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 0.5rem);
+}
+
+footer small {
+  font-family: 'Muli', sans-serif;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: #bd806e;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #eda087;
 }
 
 /* ====== Responsive Design ======*/
