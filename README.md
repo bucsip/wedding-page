@@ -4,7 +4,7 @@ This is a responsive wedding page, with all the information for people whose are
 
 # Built With
 
-HTML5, CSS3, MediaQuery
+HTML5, CSS3, jQuery
 
 # Live Version
 
