@@ -64,6 +64,7 @@ body {
 }
 
 hr {
+  border-top: 1px;
   width: 13rem;
   background: hsla(0,0%,100%,.9);
 }
@@ -119,7 +120,7 @@ hr {
   margin: 1.5rem;
 }
 
-.ceremony, .photos, .party, .travel, .food, .other {
+.ceremony, .photos, .party {
   display: inline-block;
   width: 33%;
 }
@@ -188,7 +189,9 @@ hr {
 .travel, .food, .other {
   vertical-align: top;
   margin-bottom: 2rem;
-  padding: 0 2rem;
+  padding: 0 .5rem;
+  display: inline-block;
+  width: 32%;
 }
 
 .questions-n-answers h2 {
@@ -278,6 +281,12 @@ footer a:hover{
 
 /* ====== Responsive Design ======*/
 
+@media (max-height: 192px){
+  footer {
+    height: 1.2rem;
+  } 
+}
+  
 @media (max-width: 950px) {
   .wrapper{
     height: 28rem;
@@ -293,5 +302,73 @@ footer a:hover{
 }
 
 @media (max-width: 768px) {
+  
+  .wrapper {
+    height: 10.6rem;
+    top: calc(50% - 5.3rem);
+    width: 100%;
+    left: 0;
+  }
+  
+  .cover h1 {
+    font-size: 3rem;
+  }
+  
+  .cover h2 {
+    font-size: 1.125rem;
+  }
+  
+  .upper {
+    text-transform: none;
+  }
+  
+  .locations h1, .questions-n-answers h1 {
+    padding-bottom: 0;
+  }
+  
+  .ceremony, .photos, .party, .travel, .food, .other, .program-content {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .questions-n-answers h2 {
+    text-align: center;
+  }
+  
+  .ceremony:after, .photos:after, .party:after {
+    background-color: #444349;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 33%;
+    margin-top: 1.5rem;
+  }
+  
+  .travel:after, .food:after, .other:after {
+    background-color: #d2ba87;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    margin-top: 1.5rem;
+  }
+  
+  .ceremony:after, .photos:after, .party:after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .travel:after, .food:after, .other:after {
+    margin-left: 25%;
+  }
+  
 
 }
