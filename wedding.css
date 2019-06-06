@@ -96,7 +96,7 @@ hr {
   width: 90%;
   text-align: center;
   color: #444349;
-  margin: 2.5rem;
+  margin: 2.5rem auto;
   margin-bottom: 3.5rem;
 }
 
@@ -168,7 +168,7 @@ hr {
 
 .gifts img {
   height: 7.5rem;
-  margin: 2rem;
+  margin: 2rem auto;
 }
 
 .gifts p {
@@ -247,6 +247,8 @@ hr {
 .contact a:hover {
   color: #eda087;
 }
+
+/* ====== Footer Design ====== */
 
 footer {
   display: table;
